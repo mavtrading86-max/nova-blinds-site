@@ -8,11 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
   font-family:'Poppins',sans-serif;
@@ -32,8 +28,8 @@ body{
 .hero{
   height:100vh;
   background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('hero.jpg') center/cover no-repeat;
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('hero.jpg') center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -44,7 +40,6 @@ body{
 
 .hero h1{
   font-size:48px;
-  font-weight:700;
   margin-bottom:20px;
 }
 
@@ -54,18 +49,12 @@ body{
 }
 
 .cta-btn{
-  display:inline-block;
   padding:14px 32px;
   background:white;
   color:#111;
   font-weight:600;
   text-decoration:none;
   border-radius:4px;
-  transition:0.3s ease;
-}
-
-.cta-btn:hover{
-  background:#f2f2f2;
 }
 
 /* BENEFITS */
@@ -75,25 +64,11 @@ body{
   text-align:center;
 }
 
-.benefits h2{
-  font-size:32px;
-  margin-bottom:50px;
-}
-
 .benefit-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:40px;
-}
-
-.benefit h3{
-  font-size:20px;
-  margin-bottom:12px;
-  font-weight:600;
-}
-
-.benefit p{
-  color:#666;
+  margin-top:40px;
 }
 
 /* GALLERY */
@@ -103,16 +78,11 @@ body{
   background:#f7f7f7;
 }
 
-.gallery h2{
-  text-align:center;
-  margin-bottom:50px;
-  font-size:32px;
-}
-
 .gallery-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:25px;
+  margin-top:40px;
 }
 
 .gallery-grid img{
@@ -122,16 +92,31 @@ body{
   border-radius:8px;
 }
 
+/* VIDEOS */
+
+.videos{
+  padding:80px 0;
+  text-align:center;
+}
+
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-top:40px;
+}
+
+.video-grid iframe{
+  width:100%;
+  height:250px;
+  border-radius:8px;
+}
+
 /* CONSULTATION */
 
 .consultation{
   padding:80px 0;
   text-align:center;
-}
-
-.consultation h2{
-  font-size:32px;
-  margin-bottom:30px;
 }
 
 form{
@@ -158,10 +143,6 @@ button{
   border-radius:4px;
 }
 
-button:hover{
-  background:#333;
-}
-
 /* FOOTER */
 
 footer{
@@ -176,18 +157,13 @@ footer{
 
 @media(max-width:900px){
 
-  .hero h1{
-    font-size:32px;
-  }
+  .hero h1{font-size:32px;}
 
-  .benefit-grid{
+  .benefit-grid,
+  .gallery-grid,
+  .video-grid{
     grid-template-columns:1fr;
   }
-
-  .gallery-grid{
-    grid-template-columns:1fr;
-  }
-
 }
 </style>
 </head>
@@ -206,15 +182,15 @@ footer{
 <section class="benefits container">
   <h2>Why Choose Nova</h2>
   <div class="benefit-grid">
-    <div class="benefit">
+    <div>
       <h3>Smart Home Compatible</h3>
-      <p>Seamless integration with modern automation systems.</p>
+      <p>Seamless integration with automation systems.</p>
     </div>
-    <div class="benefit">
+    <div>
       <h3>3-Year Warranty</h3>
-      <p>Reliable motors backed by professional workmanship.</p>
+      <p>Reliable motors backed by workmanship guarantee.</p>
     </div>
-    <div class="benefit">
+    <div>
       <h3>Professional Installation</h3>
       <p>Clean, precise fitting by experienced technicians.</p>
     </div>
@@ -225,11 +201,20 @@ footer{
   <div class="container">
     <h2>Recent Installations</h2>
     <div class="gallery-grid">
-      <img src="install1.jpg" alt="">
-      <img src="install2.jpg" alt="">
-      <img src="install3.jpg" alt="">
-      <img src="install4.jpg" alt="">
+      <img src="install1.jpg">
+      <img src="install2.jpg">
+      <img src="install3.jpg">
+      <img src="install4.jpg">
     </div>
+  </div>
+</section>
+
+<section class="videos container">
+  <h2>See Our Blinds In Action</h2>
+  <div class="video-grid">
+    <iframe src="https://www.youtube.com/embed/w-HII6amnaE?autoplay=1&mute=1&loop=1&playlist=w-HII6amnaE" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Rrj5-p-zi0A?autoplay=1&mute=1&loop=1&playlist=Rrj5-p-zi0A" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/XvF2awAzfaE?autoplay=1&mute=1&loop=1&playlist=XvF2awAzfaE" frameborder="0" allowfullscreen></iframe>
   </div>
 </section>
 
