@@ -3,246 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nova Motorised Blinds | Premium Automated Blinds South Africa</title>
-<meta name="description" content="Premium motorised blinds with 3-year warranty. Remote-controlled, smart home compatible, silent operation. Professional installation across South Africa. Get a free quote today.">
+<title>Nova Motorised Blinds | Premium Smart Blinds</title>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0ZZ413GEC"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-L0ZZ413GEC');
-</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#111;color:#fff;line-height:1.7;overflow-x:hidden;}
-section{padding:80px 20px;text-align:center;}
-h1{font-size:40px;margin-bottom:20px;}
-h2{font-size:30px;margin-bottom:40px;}
-p{max-width:750px;margin:0 auto 20px;font-size:18px;opacity:.9}
-
-header{
-padding:100px 20px;
-background:linear-gradient(135deg,#000,#1a1a1a);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.warranty-badge{
-display:inline-block;
-background:#d4af37;
-color:#000;
-font-weight:600;
-padding:8px 18px;
-border-radius:30px;
-margin-bottom:25px;
-font-size:14px;
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background: #fff;
 }
 
-.cta-button{
-display:inline-block;
-padding:16px 35px;
-background:#25D366;
-color:#fff;
-font-weight:600;
-text-decoration:none;
-border-radius:6px;
-margin:10px;
-transition:.3s;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.cta-button.secondary{
-background:#fff;
-color:#000;
+/* HERO SECTION */
+
+.hero {
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
-.cta-button:hover{opacity:.85}
-
-.authority{
-background:#000;
-padding:25px;
-font-size:14px;
-letter-spacing:1px;
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.gallery-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-max-width:1100px;
-margin:auto;
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
-.gallery-grid img{
-width:100%;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,.4);
+.cta-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #ffffff;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
 
-.video-container{
-position:relative;
-padding-bottom:56.25%;
-height:0;
-overflow:hidden;
-max-width:900px;
-margin:40px auto;
+.cta-btn:hover {
+  background: #f1f1f1;
 }
 
-.video-container iframe{
-position:absolute;
-top:0;left:0;
-width:100%;height:100%;
-border-radius:12px;
+/* BENEFITS SECTION */
+
+.benefits {
+  padding: 80px 0;
+  text-align: center;
 }
 
-.experience-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-max-width:1000px;
-margin:auto;
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.exp-box{
-background:#1c1c1c;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
+.benefit h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-form{
-max-width:500px;
-margin:40px auto 0;
-display:flex;
-flex-direction:column;
-gap:15px;
+.benefit p {
+  color: #666;
 }
 
-input, textarea{
-padding:14px;
-border-radius:6px;
-border:none;
-font-size:14px;
+/* GALLERY */
+
+.gallery {
+  padding: 80px 0;
+  background: #f8f8f8;
 }
 
-button{
-padding:14px;
-border:none;
-border-radius:6px;
-background:#d4af37;
-color:#000;
-font-weight:600;
-cursor:pointer;
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
 }
 
-footer{
-background:#000;
-padding:40px 20px;
-font-size:14px;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-@media(max-width:768px){
-h1{font-size:28px;}
-h2{font-size:24px;}
+.gallery-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* CONSULTATION */
+
+.consultation {
+  padding: 80px 0;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  padding: 14px 30px;
+  border: none;
+  background: #111;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .benefit-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<div class="warranty-badge">✔ 3-Year Full Warranty</div>
-
-<h1>Motorised Blinds Installed Professionally</h1>
-
-<p>
-Remote-controlled. Smart-home compatible. Precision installed 
-for modern homes and executive spaces across South Africa.
-</p>
-
-<a href="https://wa.me/27686468396"
-   class="cta-button"
-   onclick="gtag('event','whatsapp_click',{event_category:'engagement'});">
-   Get a Free Quote on WhatsApp
-</a>
-
-<a href="#quote-form" class="cta-button secondary">
-   Submit Your Details
-</a>
-
-<p style="font-size:14px;margin-top:15px;opacity:.85;">
-Fast Response • No Obligation • Limited Install Slots Weekly
-</p>
-</header>
-
-<div class="authority">
-Custom Measured • Precision Installation • Smart Home Compatible • Nationwide Service
-</div>
-
-<section>
-<h2>Recent Installations</h2>
-<div class="gallery-grid">
-<img src="install1.jpg" alt="">
-<img src="install2.jpg" alt="">
-<img src="install3.jpg" alt="">
-<img src="install7.jpg" alt="">
-<img src="install8.jpg" alt="">
-</div>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Premium Motorised Blinds for Modern Living</h1>
+    <p>Smart, remote-controlled blinds professionally installed.<br>
+    3-Year Warranty. Clean Finish. Nationwide Service.</p>
+    <a href="#consultation" class="cta-btn">Request a Free Consultation</a>
+  </div>
 </section>
 
-<section>
-<h2>See Them In Action</h2>
-
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/w-HII6amnaE?autoplay=1&mute=1&loop=1&playlist=w-HII6amnaE"
-allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/Rrj5-p-zi0A?autoplay=1&mute=1&loop=1&playlist=Rrj5-p-zi0A"
-allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/XvF2awAzfaE?autoplay=1&mute=1&loop=1&playlist=XvF2awAzfaE"
-allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-
+<section class="benefits container">
+  <h2>Why Choose Nova</h2>
+  <div class="benefit-grid">
+    <div class="benefit">
+      <h3>Smart Home Compatible</h3>
+      <p>Seamlessly integrates with modern smart home systems.</p>
+    </div>
+    <div class="benefit">
+      <h3>3-Year Warranty</h3>
+      <p>Reliable motors and professional workmanship guaranteed.</p>
+    </div>
+    <div class="benefit">
+      <h3>Professional Installation</h3>
+      <p>Clean, precise fitting by experienced technicians.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>A Seamless Installation Experience</h2>
-<div class="experience-grid">
-<div class="exp-box"><h3>Private Consultation</h3><p>We assess your space and recommend the best motorised solution.</p></div>
-<div class="exp-box"><h3>Custom Measurement</h3><p>Precise sizing ensures a flawless architectural finish.</p></div>
-<div class="exp-box"><h3>Professional Installation</h3><p>Expert fitting with careful attention to detail.</p></div>
-<div class="exp-box"><h3>Final Calibration</h3><p>We test and optimise motor performance before completion.</p></div>
-</div>
+<section class="gallery">
+  <div class="container">
+    <h2>Recent Installations</h2>
+    <div class="gallery-grid">
+      <img src="gallery1.jpg" alt="">
+      <img src="gallery2.jpg" alt="">
+      <img src="gallery3.jpg" alt="">
+    </div>
+  </div>
 </section>
 
-<section id="quote-form">
-<h2>Request a Free Quote</h2>
-<p>Prefer to leave your details? We'll contact you within 24 hours.</p>
-
-<form action="https://formsubmit.co/info@novamotorised.co.za" method="POST" onsubmit="gtag('event','form_submission',{event_category:'lead'});">
-
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_autoresponse" value="Thank you for contacting Nova Motorised. We have received your request and will contact you shortly.">
-<input type="hidden" name="_next" value="https://novamotorised.co.za/#quote-form">
-
-<input type="text" name="name" placeholder="Full Name" required>
-<input type="tel" name="phone" placeholder="Phone Number" required>
-<textarea name="message" placeholder="Tell us about your project (optional)"></textarea>
-
-<button type="submit">Submit Details</button>
-</form>
-
+<section id="consultation" class="consultation container">
+  <h2>Request Your Free Consultation</h2>
+  <form action="https://formsubmit.co/info@novamotorised.co.za" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" rows="4" placeholder="Tell us about your space"></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
 </section>
 
 <footer>
-© 2013 Nova Motorised Blinds | 3-Year Warranty Included | South Africa
+  © 2026 Nova Motorised Blinds. All Rights Reserved.
 </footer>
 
 </body>
